@@ -1,0 +1,19 @@
+create database hotel_db;
+use hotel_db;
+
+create table reservations(
+reservationId int  auto_increment primary key,
+guestName varchar(250) not null,
+roomNumber int not null,
+contactNumber varchar(100) not null,
+reservationDate timestamp default current_timestamp
+);
+
+show tables;
+
+select * from reservations;
+describe reservations;
+
+
+executeUpdate-> insert , update,delete
+executeQuery-> get(retrieve)

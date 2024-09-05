@@ -14,3 +14,4 @@ insert into employee (name,job_title) values
 ('zoya','Front End Developer');
 
 select * from employee;
+select id,name, job_title from employee where name='zoya';

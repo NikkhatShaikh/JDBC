@@ -129,7 +129,7 @@ public class HotelReservationSystem {
             int roomNumber = scanner.nextInt();
 
             System.out.println("Enter new contact number: ");
-            String contactNumber = scanner.next();
+            String contactNumber = scanner.nextLine();
 
             String sql = "update reservations SET  guestName='" + guestName + "' , " +
                     "roomNumber=" + roomNumber + ", contactNumber='" + contactNumber + "' where reservationId = " + reservationId;
@@ -170,7 +170,7 @@ public class HotelReservationSystem {
             int reservationId = scanner.nextInt();
 
             System.out.println("Enter guest Name: ");
-            String guestName = scanner.next();
+            String guestName = scanner.nextLine();
 
             String sql = "SELECT roomNumber from reservations where reservationId= " + reservationId + " AND guestName='" + guestName + "' ;";
 
@@ -227,14 +227,14 @@ public class HotelReservationSystem {
         try {
 
             System.out.println("Enter Guest name: ");
-            String name = scanner.next();
+            String name = scanner.nextLine();
             scanner.nextLine();
 
             System.out.println("Enter room number: ");
             int roomNumber = scanner.nextInt();
 
             System.out.println("Enter contact number: ");
-            String contactNumber = scanner.next();
+            String contactNumber = scanner.nextLine();
 
             String sqlQuery = "INSERT INTO reservations (guestName,roomNumber,contactNumber) " +
                     "values ('" + name + "', " + roomNumber + " , '" + contactNumber + "' ) ; ";

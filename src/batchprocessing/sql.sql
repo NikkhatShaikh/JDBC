@@ -18,3 +18,4 @@ insert into employee(name,jobTitle,salary) values
 
 select * from employee;
 
+delete from employee where id in (5,6,7);
